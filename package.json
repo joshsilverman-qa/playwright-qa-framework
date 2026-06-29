@@ -1,0 +1,16 @@
+{
+  "name": "saas-playwright-framework",
+  "version": "1.0.0",
+  "description": "Playwright regression framework for SaaS login and core user flows",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:login": "playwright test tests/login.spec.ts",
+    "test:ci": "playwright test --reporter=html",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "typescript": "^5.4.0"
+  }
+}
